@@ -1,111 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+  --primaryTextColor: #232e35; /* Untuk title atau judul */
+  --secondaryTextColor: #656d72; /* Untuk text biasa seperti paragraph contohnya */
 
-:root{
-    --primaryTextColor: #232e35;
-    --secondaryTextColor: #656d72;
+  --borderColor: #f1f1f1;
+  --lineColor: #d9d9d9; /* untuk line di pre-title */
 
+  --primaryBackgroundColor: #fff;
+  --secondaryBackgroundColor: #fbfbfb;
+  --thirdBackgroundColor: #f5f3fe;
 
-    --borderColor: #ffffff;
-    --lineColor: #d9d9d9;
+  --primaryIconColor: #7e74f1;
+  --primaryIconColorHover: #5d51e8;
 
-    --primaryBackgroundColor: #ffffff;
-    --secondaryBackgroundColor: #fbfbfb;
-    --thirdBackgroundColor: #f5f3fe;
+  --sectionPadding: 6rem 0;
 
-    --primaryItemColor: #7e74f1;
-    --primaryItemColorHover: #5d51e8;
-
-    --sectionPadding: 6rem 0;
-    
-    --itemBorderRadius: 0,7 rem;
+  --itemBorderRadius: 0.7rem;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Roboto", sans-serif; 
+  font-family: "Roboto", sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 strong{
-    color: var(--primaryTextColor);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--primaryTextColor);
 }
 
 p {
-    font-size: 1rem; //16px
-    line-height: 1.9rem;
+  font-size: 1rem; /* 16 px */
+  line-height: 1.9rem; /*30.4 px */
 }
 
-p, span, label, input, textarea, li{
-    color: var(--secondaryTextColor);
+p,
+span,
+label,
+input,
+textarea,
+li {
+  color: var(--secondaryTextColor);
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
+
+/* End Preparation */
 
 .main-container {
-    margin :0 auto;
-    width : 1200px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 1200px){
-    .main-container{
-        width: 90%;
-    }
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 90%;
+  }
 }
 
-//Buttons//
+/* Buttons */
 .btn {
-    paddin: 1rem 1.5rem;
-    background: #ffffff;
-    border: 1,5px solid var(--borderColor);
-    cursor: pointer;
-    transition: .2s ease-in-out;
+  padding: 1rem 1.5rem;
+  background: white;
+  border: 1.5px solid var(--borderColor);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 .btn:hover {
-    box-shadow: rgba
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
 
-//logo and Navigation menu//
+
+/* --- Logo and Navigation Menu --- */
 .nav {
-    display: flex;
-    padding: 2rem 0;
-    justify-content: space-between;
-    
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
 }
 
-.nav .logo {
-    display: flex; /* Membiarkan logo berada di sisi kiri */
-    align-item: center;
-    font-weight: 700px;
-    font-size: 2rem
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
 }
 
-.nav nav {
-    flex: 1; /* Mengontrol lebar relatif bagian navigasi */
-    text-align: right; /* Mengarahkan menu ke sisi kanan */
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .logo a {
-    color: var(--primaryTextColor);
+  color: var(--primaryTextColor);
 }
 
-.nav ul {
-    list-style: none;
-    display: inline-flex; /* Menyusun elemen navigasi secara horizontal */
-    gap: 3rem; /* Jarak antar elemen dalam navigasi */
-}
-
+/* Navigation Menu */
 nav ul li {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 nav ul li a {
-    color: var(--primaryTextColor);  
+  color: var(--primaryTextColor);
 }
+
+/* Burger - Save for later on video */
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  margin: 7px;
+  transition: all 0.3s;
+  z-index: 99;
+}
+
+.burger {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  top: 33px;
+  right: 35px;
+}
+
+
+
