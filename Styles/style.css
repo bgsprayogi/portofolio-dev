@@ -6,7 +6,7 @@
     --secondaryTextColor: #656d72;
 
 
-    --border-color: #ffffff;
+    --borderColor: #ffffff;
     --lineColor: #d9d9d9;
 
     --primaryBackgroundColor: #ffffff;
@@ -27,6 +27,85 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Roboto", sans-serif; 
+}
+
+h1,h2,h3,h4,h5,h6 strong{
+    color: var(--primaryTextColor);
+}
+
+p {
+    font-size: 1rem; //16px
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li{
+    color: var(--secondaryTextColor);
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container {
+    margin :0 auto;
+    width : 1200px;
+}
+
+@media screen and (max-width: 1200px){
+    .main-container{
+        width: 90%;
+    }
+}
+
+//Buttons//
+.btn {
+    paddin: 1rem 1.5rem;
+    background: #ffffff;
+    border: 1,5px solid var(--borderColor);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: rgba
+
+//logo and Navigation menu//
+.nav {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: space-between;
+    
+}
+
+.nav .logo {
+    display: flex; /* Membiarkan logo berada di sisi kiri */
+    align-item: center;
+    font-weight: 700px;
+    font-size: 2rem
+}
+
+.nav nav {
+    flex: 1; /* Mengontrol lebar relatif bagian navigasi */
+    text-align: right; /* Mengarahkan menu ke sisi kanan */
+}
+
+.logo a {
+    color: var(--primaryTextColor);
+}
+
+.nav ul {
+    list-style: none;
+    display: inline-flex; /* Menyusun elemen navigasi secara horizontal */
+    gap: 3rem; /* Jarak antar elemen dalam navigasi */
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--primaryTextColor);  
 }
