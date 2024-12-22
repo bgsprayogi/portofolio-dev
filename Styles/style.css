@@ -84,6 +84,29 @@ a {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
+/* Titles */
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--secondaryTextColor);
+  position: relative;
+  padding-left: 40px;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.pre-title::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: var(--lineColor);
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+}
+
 
 /* --- Logo and Navigation Menu --- */
 .nav {
@@ -138,5 +161,11 @@ nav ul li a {
   right: 35px;
 }
 
+/* Hero Section */
+#hero {
+  height: 720px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 
