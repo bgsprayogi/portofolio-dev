@@ -8,7 +8,7 @@
   --lineColor: #d9d9d9; /* untuk line di pre-title */
 
   --primaryBackgroundColor: #fff;
-  --secondaryBackgroundColor: #fbfbfb;
+  --secondaryBackgroundColor: #F8FAFC;
   --thirdBackgroundColor: #f5f3fe;
 
   --primaryIconColor: #7e74f1;
@@ -85,6 +85,12 @@ a {
 }
 
 /* Titles */
+
+.section-title {
+  margin: 1rem 0 4rem;
+  font-size: 2rem;
+}
+  
 .pre-title {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -107,6 +113,13 @@ a {
   top: 50%;
 }
 
+/* layouts */
+.grid-3 {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; use this first, use code below when its time for explaining responsive design part */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+} 
 
 /* --- Logo and Navigation Menu --- */
 .nav {
@@ -186,4 +199,45 @@ nav ul li a {
 .hero-right {
   display: flex;
   justify-content: center;
+}
+
+/* Service Section */
+#services {
+  padding: var(--sectionPadding);
+  background-color: var(--secondaryBackgroundColor);
+};
+
+.services .pre-title {
+  margin: 0 auto;
+}
+
+.services-title {
+  text-align: center;
+} 
+
+.service {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: var(--primaryBackgroundColor);
+  border-radius: var(--itemBorderRadius);
+  box-shadow:  18px 18px 23px #c1c1c1,
+             -18px -18px 23px #ffffff;
+}
+
+.service h4 {
+  margin: 1,5rem 0;
+  font-weight: 500;
+  font-size: 1,05rem;
+}
+
+.service-icon {
+  background: var(--thirdBackgroundColor);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.3rem;
+  border-radius: 0.7rem;
+} 
+
+.service-icon svg{
+  fill: var(--primaryIconColor);
 }
