@@ -241,3 +241,66 @@ nav ul li a {
 .service-icon svg{
   fill: var(--primaryIconColor);
 }
+
+/* Portfolios Section */
+#portfolios {
+  padding: var(--sectionPadding);
+}
+
+.portfolio {
+  border-radius: var(--itemBorderRadius);
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow:  6px 6px 12px #dbdbdb,
+               -6px -6px 12px #ffffff;
+}
+
+.portfolios-cover {
+  height: 250px;
+}
+
+.portfolios img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+  .portfolio-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .portfolio-info {
+    padding: 2rem 1.5rem;
+  }
+  
+  h4 {
+    font-size: 500;
+    font-weight: 1.05rem;
+  }
+
+  .portfolio-title a svg:hover {
+    fill: var(--primaryIconColorHover)
+  }
+
+  .portfolio-title a svg {
+    transition: 0.2s ease-in-out;
+  }
+
+  .portfolio-tags {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .portfolio-tags div {
+    font-size: 0.9rem;
+    border-radius: 5px;
+    background: #f1f1f1;
+    box-shadow:  6px 6px 12px #dbdbdb,
+                 -6px -6px 12px #ffffff;
+    padding: 0.4rem 1rem;
+    color: var(--secondaryTextColor);
+  }
