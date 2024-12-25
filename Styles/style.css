@@ -329,7 +329,7 @@ nav ul li a {
   .education .line div {
     width: 2px;
     height: 100%;
-    background: var(--borderColor);
+    background: #BCCCDC;
     position: relative;
   }
 
@@ -346,8 +346,20 @@ nav ul li a {
     content:"";
     width: 15px;
     height: 15px;
-    background: var(--borderColor);
+    background: #9AA6B2;
     border-radius: 50%;
     position: absolute;
     left: -6px;
   }
+
+  .skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+  }
+  
+  .skills-right ul {
+    line-height: 2rem;
+    padding: 0 1rem;
+  }
+  
