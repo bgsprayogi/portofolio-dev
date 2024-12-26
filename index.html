@@ -314,6 +314,34 @@
       </div>
     </section>
     <!--End Of Contact-->
+    <section id="contact">
+      <div class="contact main-container">
+        <div class="contact-left">
+          <form
+            action="https://formspree.io/f/xeqwdykj"
+            method="POST"
+            class="contact-form"
+          >
+            <div>
+              <input type="text" placeholder="Name" name="name" />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" name="email" />
+            </div>
+            <div>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <div>
+              <button class="btn-submit">Send Message</button>
+            </div>
+          </form>
+        </div>
     <!--End of Skills and Education-->
   </body>
 </html>
@@ -351,7 +379,7 @@
       }
 
       // Kecepatan animasi mengetik/hapus
-      const speed = isDeleting ? 50 : 100;
+      const speed = isDeleting ? 50 : 70;
       setTimeout(type, speed);
     }
 
