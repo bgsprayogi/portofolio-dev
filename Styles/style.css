@@ -460,3 +460,27 @@ service:hover:active {
 .contact-item-detail h4 {
   margin-bottom: 0.6rem;
 }
+
+/* Footer */
+footer {
+  padding: 2px 0;
+  background: var(--secondaryBackgroundColor);
+  text-align: center;
+}
+
+.footer-icon {
+  margin-bottom: 1rem; 
+}
+
+.footer-icons a {
+  margin: 0 0.5rem;
+}
+
+.footer-icons svg {
+  fill: #3e3f40;
+}
+
+.footer-icons a:hover svg {
+  fill: #2E5077;
+}
+
