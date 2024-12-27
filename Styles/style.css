@@ -315,6 +315,13 @@ service:hover:active {
                  -6px -6px 12px #ffffff;
     padding: 0.4rem 1rem;
     color: var(--secondaryTextColor);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .portfolio-tags div:hover {
+    transform: scale(1.1);
+}
   }
 
   /* Skills And Education */
