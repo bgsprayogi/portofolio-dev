@@ -208,6 +208,7 @@ nav ul li a {
   background-color: var(--secondaryBackgroundColor);
 };
 
+
 .services .pre-title {
   margin: 0 auto;
 }
@@ -223,6 +224,16 @@ nav ul li a {
   border-radius: var(--itemBorderRadius);
   box-shadow:  18px 18px 23px #c1c1c1,
              -18px -18px 23px #ffffff;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+  transform: scale(1.2);
+}
+
+service:hover:active {
+  transform: scale(1);
 }
 
 .service h4 {
@@ -416,3 +427,4 @@ nav ul li a {
 .btn-submit:hover {
   background-color: var(--primaryIconColorHover);
 }
+
