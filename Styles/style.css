@@ -364,3 +364,20 @@ nav ul li a {
     padding: 0 1rem;
   }
   
+  /* Contact Section*/
+  #contact {
+    padding: var(--sectionPadding);
+  }
+  
+  .contact {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+  }
+
+  .contact-form div {
+    margin-bottom: 1.4rem;
+  }
+
+  
