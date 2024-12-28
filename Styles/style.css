@@ -58,6 +58,10 @@ a {
   text-decoration: none;
 }
 
+.nav-a:hover {
+  color: #1F509A;
+}
+
 /* End Preparation */
 
 .main-container {
@@ -77,15 +81,21 @@ a {
   background: white;
   border: 1.5px solid var(--borderColor);
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out; /* Menambahkan durasi transisi */
+  color: #000; /* Warna teks default */
+  font-weight: bold;
+  border-radius: 1.5rem;
 }
 
 .btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: rgba(1, 1, 0, 2) 0px 3px 10px; /* Efek bayangan lebih jelas */
+  background-color: #000000; /* Mengubah warna latar belakang */
+  color: white; /* Mengubah warna teks menjadi putih */
+  border-color: #000000; /* Menyesuaikan warna border dengan latar belakang saat hover */
 }
 
-/* Titles */
 
+/* Titles */
 .section-title {
   margin: 1rem 0 4rem;
   font-size: 2rem;
@@ -427,13 +437,14 @@ service:hover:active {
   background-color: var(--primaryIconColor);
   color: #ffffff;
   border: none;
-  border-radius: 3px;
+  border-radius: 20px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 
 .btn-submit:hover {
   background-color: var(--primaryIconColorHover);
+  color: black;
 }
 
 /* Contact Section - Right Side */
