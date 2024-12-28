@@ -17,6 +17,7 @@ window.onscroll = function() {
 };
 
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const heroName = document.querySelector('.hero-name');
     const text = "Muhammad Bagas Prayogi.";
