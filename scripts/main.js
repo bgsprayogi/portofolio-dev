@@ -5,6 +5,18 @@ window.onbeforeunload = () => {
     }
 }
 
+// Menambahkan kelas 'fixed' pada navbar saat scroll
+window.onscroll = function() {
+  const navbar = document.querySelector('.nav');
+  
+  if (window.pageYOffset > 100) {  // Sesuaikan angka ini agar sesuai dengan tinggi header Anda
+    navbar.classList.add('fixed');  // Mengubah navbar menjadi fixed setelah scroll 100px
+  } else {
+    navbar.classList.remove('fixed');  // Menghapus fixed ketika di atas
+  }
+};
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const heroName = document.querySelector('.hero-name');
     const text = "Muhammad Bagas Prayogi.";

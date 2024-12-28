@@ -58,9 +58,7 @@ a {
   text-decoration: none;
 }
 
-.nav-a:hover {
-  color: #1F509A;
-}
+
 
 /* End Preparation */
 
@@ -136,6 +134,35 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
+  position: sticky;
+  top: 0; /* Menetapkan posisi navbar tetap di atas */
+  z-index: 9999; /* Mengatur nilai z-index tinggi untuk memastikan navbar berada di atas */
+  transition: background-color 0.3s ease-in-out; /* Transisi halus untuk perubahan latar belakang */
+  background-color: white;
+  box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+  border-radius: 0 0 50px 50px;
+}
+
+/* Menambahkan efek transparansi pada navbar saat scroll */
+.nav.scrolled {
+  background-color: rgba(255, 255, 255, 0.7); /* Transparan saat scroll */
+}
+
+/* Membuat logo dan menu menjadi lebih jelas */
+.nav .logo {
+  z-index: 10000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  z-index: 10000;
+}
+
+.nav-a:hover {
+  color: #1F509A;
 }
 
 nav ul {
