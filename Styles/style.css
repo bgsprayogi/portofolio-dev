@@ -325,10 +325,11 @@ service:hover:active {
   }
 
   /* Skills And Education */
-  #skills {
-    padding: var(--sectionPadding);
-    background: var(--secondaryBackgroundColor);
-  }
+#skills {
+  padding: var(--sectionPadding);
+  background: var(--secondaryBackgroundColor);
+}
+
 
   .skills-grid {
     display: grid;
@@ -463,13 +464,13 @@ service:hover:active {
 
 /* Footer */
 footer {
-  padding: 2px 0;
-  background: var(--secondaryBackgroundColor);
+  padding: 1px;
+  background: #BCCCDC;
   text-align: center;
 }
 
-.footer-icon {
-  margin-bottom: 1rem; 
+.footer-icons {
+  margin-top:1rem
 }
 
 .footer-icons a {
