@@ -82,9 +82,24 @@ a {
   transition: 0.2s ease-in-out;
 }
 
-.btn:hover {
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+.btn {
+  background-color: #A19AD3; /* Warna dasar button */
+  color: #ffffff; /* Warna teks awal */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transisi halus */
 }
+
+.btn:hover {
+  background-color: #000000; /* Warna background saat hover */
+  color: #ffffff; /* Warna teks saat hover */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Efek shadow */
+  
+}
+
 
 
 /* Titles */
@@ -128,7 +143,14 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 8px 8px 16px #c3c3c3, -8px -8px 16px #fdfdfd;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Pastikan navbar berada di atas konten lain */
+  background-color: white; /* Tambahkan background untuk efek sticky */
 }
+
 
 .nav-a:hover {
   color:#074799;
@@ -181,7 +203,7 @@ nav ul li a {
 }
 /* Hero Section */
 #hero {
-  height: 720px;
+  height: 580px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
