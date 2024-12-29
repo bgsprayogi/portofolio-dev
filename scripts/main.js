@@ -5,19 +5,6 @@ window.onbeforeunload = () => {
     }
 }
 
-// Menambahkan kelas 'fixed' pada navbar saat scroll
-window.onscroll = function() {
-  const navbar = document.querySelector('.nav');
-  
-  if (window.pageYOffset > 100) {  // Sesuaikan angka ini agar sesuai dengan tinggi header Anda
-    navbar.classList.add('fixed');  // Mengubah navbar menjadi fixed setelah scroll 100px
-  } else {
-    navbar.classList.remove('fixed');  // Menghapus fixed ketika di atas
-  }
-};
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const heroName = document.querySelector('.hero-name');
     const text = "Muhammad Bagas Prayogi.";
@@ -57,3 +44,25 @@ document.addEventListener("DOMContentLoaded", function () {
     heroName.textContent = ''; // Kosongkan elemen sebelum mulai animasi
     type();
   });
+
+
+// Toggle & Responsive Navigation
+const navSlide = () => {
+  const burger = document.querySelector(".burger");
+  const navLists = document.querySelector("nav");
+
+  burger.addEventListener("click", () => {
+    // Toggle nav list and burger class
+    navLists.classList.toggle("nav-active");
+    burger.classList.toggle("toggle-burger");
+  });
+};
+
+navSlide();
+
+// Clear form before unload
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName("form")) {
+    form.reset();
+  }
+};

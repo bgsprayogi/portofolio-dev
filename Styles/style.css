@@ -79,17 +79,11 @@ a {
   background: white;
   border: 1.5px solid var(--borderColor);
   cursor: pointer;
-  transition: 0.3s ease-in-out; /* Menambahkan durasi transisi */
-  color: #000; /* Warna teks default */
-  font-weight: bold;
-  border-radius: 1.5rem;
+  transition: 0.2s ease-in-out;
 }
 
 .btn:hover {
-  box-shadow: rgba(1, 1, 0, 2) 0px 3px 10px; /* Efek bayangan lebih jelas */
-  background-color: #000000; /* Mengubah warna latar belakang */
-  color: white; /* Mengubah warna teks menjadi putih */
-  border-color: #000000; /* Menyesuaikan warna border dengan latar belakang saat hover */
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
 
@@ -134,35 +128,10 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 9999; 
-  transition: background-color 0.3s ease-in-out; 
-  background-color: white;
-  box-shadow:  20px 20px 60px #d9d9d9,
-             -20px -20px 60px #ffffff;
-  border-radius: 0 0 30px 30px;
-}
-
-/* Menambahkan efek transparansi pada navbar saat scroll */
-.nav.scrolled {
-  background-color: rgba(255, 255, 255, 0.7); /* Transparan saat scroll */
-}
-
-/* Membuat logo dan menu menjadi lebih jelas */
-.nav .logo {
-  z-index: 10000;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 3rem;
-  z-index: 10000;
 }
 
 .nav-a:hover {
-  color: #1F509A;
+  color:#074799;
 }
 
 nav ul {
@@ -206,11 +175,10 @@ nav ul li a {
 .burger {
   display: none;
   z-index: 99;
-  position: fixed;
+  position: sticky;
   top: 33px;
   right: 35px;
 }
-
 /* Hero Section */
 #hero {
   height: 720px;
